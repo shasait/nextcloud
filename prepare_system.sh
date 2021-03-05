@@ -19,7 +19,7 @@ prepare_ubuntu() {
         $SUDO apt install software-properties-common curl git mc vim facter python3 python3-apt aptitude -y
         [ $(uname -m) == "aarch64" ] && $SUDO apt install gcc python3-dev libffi-dev libssl-dev make -y
 
-        PYTHON_BIN=/usr/bin/python
+        PYTHON_BIN=/usr/bin/python3
         install_pip
         $SUDO pip install python-apt -U
 
